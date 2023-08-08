@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icShop"
+        android:icon="@drawable/qhome"
+        android:title="Shop" />
+    <item
+        android:id="@+id/icExplore"
+        android:icon="@drawable/compass"
+        android:title="Find"
+
+        />
+    <item
+        android:id="@+id/icDeals"
+        android:icon="@drawable/deals"
+        android:title="Deals"
+        />
+    <item
+        android:id="@+id/icCart"
+        android:icon="@drawable/shoppingcart"
+        android:title="Cart"
+        />
+    <item
+        android:id="@+id/icMore"
+        android:icon="@drawable/more"
+        android:title="More"
+        />
+
+</menu>
