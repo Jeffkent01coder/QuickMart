@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.quickmart.R
@@ -16,6 +15,7 @@ import com.example.quickmart.adapters.SnackAdapter
 import com.example.quickmart.databinding.FragmentHomeBinding
 import com.example.quickmart.model.ProductData
 import com.example.quickmart.screens.QRCode
+import com.example.quickmart.subscreen.ProductDetails
 
 class HomeFragment : Fragment(),
     PromotionAdapter.OnPromoClickListener,
@@ -230,19 +230,39 @@ class HomeFragment : Fragment(),
     }
 
     override fun onPromoClick(product: ProductData, position: Int) {
-        Toast.makeText(requireActivity(), "clicked", Toast.LENGTH_SHORT).show()
+        val intent = Intent(requireActivity(), ProductDetails::class.java)
+        intent.putExtra("image", product.productImage.toString())
+        intent.putExtra("name", product.productTitle)
+        intent.putExtra("quantity", product.productQuantity)
+        intent.putExtra("price", product.productPrice)
+        startActivity(intent)
     }
 
     override fun onElectronicClick(product: ProductData, position: Int) {
-        Toast.makeText(requireActivity(), "clicked", Toast.LENGTH_SHORT).show()
+        val intent = Intent(requireActivity(), ProductDetails::class.java)
+        intent.putExtra("image", product.productImage.toString())
+        intent.putExtra("name", product.productTitle)
+        intent.putExtra("quantity", product.productQuantity)
+        intent.putExtra("price", product.productPrice)
+        startActivity(intent)
     }
 
     override fun onDetergentClick(product: ProductData, position: Int) {
-        Toast.makeText(requireActivity(), "clicked", Toast.LENGTH_SHORT).show()
+        val intent = Intent(requireActivity(), ProductDetails::class.java)
+        intent.putExtra("image", product.productImage.toString())
+        intent.putExtra("name", product.productTitle)
+        intent.putExtra("quantity", product.productQuantity)
+        intent.putExtra("price", product.productPrice)
+        startActivity(intent)
     }
 
     override fun onSnackClick(product: ProductData, position: Int) {
-        Toast.makeText(requireActivity(), "clicked", Toast.LENGTH_SHORT).show()
+        val intent = Intent(requireActivity(), ProductDetails::class.java)
+        intent.putExtra("image", product.productImage.toString())
+        intent.putExtra("name", product.productTitle)
+        intent.putExtra("quantity", product.productQuantity)
+        intent.putExtra("price", product.productPrice)
+        startActivity(intent)
     }
 
 }

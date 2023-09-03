@@ -34,6 +34,8 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         dataInitialize()
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.cartRecyclerView)

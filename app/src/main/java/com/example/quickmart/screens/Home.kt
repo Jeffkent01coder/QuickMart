@@ -1,6 +1,7 @@
 package com.example.quickmart.screens
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.quickmart.R
@@ -8,7 +9,9 @@ import com.example.quickmart.databinding.ActivityHomeBinding
 import com.example.quickmart.homeFragments.*
 
 class Home : AppCompatActivity() {
+
     private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         supportActionBar?.hide()
