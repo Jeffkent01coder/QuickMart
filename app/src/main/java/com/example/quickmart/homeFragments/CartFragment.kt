@@ -1,5 +1,6 @@
 package com.example.quickmart.homeFragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import com.example.quickmart.R
 import com.example.quickmart.adapters.CartAdapter
 import com.example.quickmart.databinding.FragmentCartBinding
 import com.example.quickmart.model.ProductData
+import com.example.quickmart.subscreen.Checkouts
 
 
 class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
@@ -34,8 +36,6 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         dataInitialize()
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.cartRecyclerView)
@@ -45,6 +45,11 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
         recyclerView.adapter = adapter
         adapter.notifyDataSetChanged()
 
+        binding.btnCheckOut.setOnClickListener {
+            val intent = Intent(requireActivity(), Checkouts::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onCartClick(product: ProductData, position: Int) {
@@ -53,23 +58,23 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
 
     private fun dataInitialize() {
         cartArrayList = arrayListOf(
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.apple, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.fruit, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.apple, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.pasta, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.juice, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.fruit, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
-            ProductData("",R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.apple, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.fruit, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.apple, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.pasta, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.juice, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.fruit, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
+            ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
 
             )
     }
