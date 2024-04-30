@@ -52,10 +52,6 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
 
     }
 
-    override fun onCartClick(product: ProductData, position: Int) {
-        Toast.makeText(requireActivity(), "Clicked", Toast.LENGTH_SHORT).show()
-    }
-
     private fun dataInitialize() {
         cartArrayList = arrayListOf(
             ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
@@ -77,6 +73,18 @@ class CartFragment : Fragment(), CartAdapter.OnCartClickListener {
             ProductData("", R.drawable.bana, "Banana", "2 kg", "", "ksh 300"),
 
             )
+    }
+
+    override fun onAddClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(), "added", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onSubtractClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(), "removed", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onDeleteClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(), "Deleted", Toast.LENGTH_SHORT).show()
     }
 
 }

@@ -40,10 +40,7 @@ class ProductDetails : AppCompatActivity() {
             }
 
         }
-//        binding.btnAddToCart.setOnClickListener {
-//            val navController = findNavController(R.id.nav_host_fragment)
-//            navController.navigate(R.id.action_start_to_myFragment)
-//        }
+
 
         binding.ivBack.setOnClickListener {
             onBackPressed()

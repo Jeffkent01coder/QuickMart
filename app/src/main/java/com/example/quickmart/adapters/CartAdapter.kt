@@ -14,19 +14,27 @@ class CartAdapter(
 
     inner class ProductViewHolder(val cartItemBinding: CartItemBinding) :
         RecyclerView.ViewHolder(cartItemBinding.root) {
+
         fun setData(product: ProductData, action: OnCartClickListener) {
             cartItemBinding.apply {
                 productTitle.text = product.productTitle
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            cartItemBinding.root.setOnClickListener {
-                action.onCartClick(product, adapterPosition)
-            }
 
+                btnAdd.setOnClickListener {
+                    action.onAddClick(product, adapterPosition)
+                }
+
+                btnSubtract.setOnClickListener {
+                    action.onSubtractClick(product, adapterPosition)
+                }
+
+                deleteTask.setOnClickListener {
+                    action.onDeleteClick(product, adapterPosition)
+                }
+            }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
@@ -49,6 +57,8 @@ class CartAdapter(
     }
 
     interface OnCartClickListener {
-        fun onCartClick(product: ProductData, position: Int)
+        fun onAddClick(product: ProductData, position: Int)
+        fun onSubtractClick(product: ProductData, position: Int)
+        fun onDeleteClick(product: ProductData, position: Int)
     }
 }
