@@ -52,14 +52,14 @@ class Spices : AppCompatActivity(), SpiceAdapter.OnSpiceClickListener {
 
     private fun dataInitialize() {
         spiceArrayList = arrayListOf(
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.spice, "spice", "1", "", "$4.6", "", "", ""),
         )
     }
 }

@@ -53,14 +53,14 @@ class CookingOil : AppCompatActivity(), CookingOilAdapter.OnCookingClickListener
 
     private fun dataInitialize() {
         oilArrayList = arrayListOf(
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.oils, "Cooking Oil", "1", "", "$4.6", "", "", ""),
         )
     }
 }

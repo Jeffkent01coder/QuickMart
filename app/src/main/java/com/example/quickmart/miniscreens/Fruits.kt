@@ -47,19 +47,19 @@ class Fruits : AppCompatActivity(), FruitAdapter.OnFruitClickListener {
     }
 
     override fun onAddToCartClick(product: ProductData, position: Int) {
-        Toast.makeText(this,"added to cart", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "added to cart", Toast.LENGTH_SHORT).show()
     }
 
     private fun dataInitialize() {
         fruitArrayList = arrayListOf(
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
         )
     }
 }

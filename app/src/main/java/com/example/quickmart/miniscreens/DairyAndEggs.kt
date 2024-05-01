@@ -60,10 +60,9 @@ class DairyAndEggs : AppCompatActivity(), DairyEggsAdapter.OnDairyClickListener 
                 "$4.6",
                 "",
                 "",
-                "",
                 ""
             ),
-            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", ""),
             ProductData(
                 "",
                 R.drawable.dairyproducts,
@@ -73,10 +72,9 @@ class DairyAndEggs : AppCompatActivity(), DairyEggsAdapter.OnDairyClickListener 
                 "$4.6",
                 "",
                 "",
-                "",
                 ""
             ),
-            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", ""),
             ProductData(
                 "",
                 R.drawable.dairyproducts,
@@ -86,10 +84,9 @@ class DairyAndEggs : AppCompatActivity(), DairyEggsAdapter.OnDairyClickListener 
                 "$4.6",
                 "",
                 "",
-                "",
                 ""
             ),
-            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", ""),
             ProductData(
                 "",
                 R.drawable.dairyproducts,
@@ -99,10 +96,9 @@ class DairyAndEggs : AppCompatActivity(), DairyEggsAdapter.OnDairyClickListener 
                 "$4.6",
                 "",
                 "",
-                "",
                 ""
             ),
-            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", "", ""),
+            ProductData("", R.drawable.eggs, "eggs", "1", "", "$4.6", "", "", ""),
         )
     }
 }

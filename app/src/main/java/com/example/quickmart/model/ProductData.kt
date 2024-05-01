@@ -9,8 +9,6 @@ data class ProductData(
     val productPrice : String? = "",
     val mainCategory : String? = "",
     val subCategory : String? = "",
-    val miniCategory : String? = "",
     val promotionTitle : String? = "",
-    val categoryImage: Int? = 0
 
 )
