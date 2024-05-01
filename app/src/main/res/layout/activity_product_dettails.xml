@@ -61,6 +61,15 @@
                     android:text="Naturel Red Apple"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#DA2222"
+                    android:layout_marginTop="10dp"
+                    android:text="In Stock"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/productQuantity"
@@ -94,6 +103,9 @@
                         android:text="1"
                         android:textSize="20sp"
                         android:textStyle="bold" />
+
+
+
 
                     <ImageButton
                         android:id="@+id/btnAdd"

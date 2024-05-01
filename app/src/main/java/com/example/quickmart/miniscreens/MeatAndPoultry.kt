@@ -49,14 +49,14 @@ class MeatAndPoultry : AppCompatActivity(), MeatAndPoultryAdapter.OnMeatPoultryC
 
     private fun dataInitialize() {
         meatpoultryArrayList = arrayListOf(
-            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chicken, "chicken", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.meats, "meats", "1", "", "$4.6", "", "", "","",""),
         )
     }
 }

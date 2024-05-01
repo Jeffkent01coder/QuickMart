@@ -52,14 +52,14 @@ class Fruits : AppCompatActivity(), FruitAdapter.OnFruitClickListener {
 
     private fun dataInitialize() {
         fruitArrayList = arrayListOf(
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.bana, "bana", "1", "", "$4.6", "", "", "","",""),
         )
     }
 }

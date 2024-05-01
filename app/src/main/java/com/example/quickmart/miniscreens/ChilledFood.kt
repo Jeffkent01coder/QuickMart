@@ -55,14 +55,14 @@ class ChilledFood : AppCompatActivity(), ChilledFoodAdapter.OnChilledClickListen
 
     private fun dataInitialize() {
         chilledArrayList = arrayListOf(
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.chill, "chill", "1", "", "$4.6", "", "", "","",""),
         )
     }
 }

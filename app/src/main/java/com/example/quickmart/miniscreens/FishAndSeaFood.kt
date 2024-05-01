@@ -53,14 +53,14 @@ class FishAndSeaFood : AppCompatActivity(), FishAndSeaFoodAdapter.OnSeaClickList
 
     private fun dataInitialize() {
         fishseaArrayList = arrayListOf(
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.fish, "fish", "1", "", "$4.6", "", "", "","",""),
         )
     }
 }

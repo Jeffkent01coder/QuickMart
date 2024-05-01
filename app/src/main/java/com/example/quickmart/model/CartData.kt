@@ -1,6 +1,7 @@
 package com.example.quickmart.model
 
-data class ProductData(
+data class CartData(
+    val uid : String,
     val productId : String,
     val productImage : Int? = 0,
     val productTitle : String? = "",
@@ -11,5 +12,6 @@ data class ProductData(
     val subCategory : String? = "",
     val promotionTitle : String? = "",
     val productDiscount : String? = "",
-    val stock : String? = ""
+    val stock : String? = "",
+    val quantity : String? = ""
 )

@@ -39,14 +39,14 @@ class Vegetables : AppCompatActivity(), VegetableAdapter.OnVegetableClickListene
 
     private fun dataInitialize() {
         vegetableArrayList = arrayListOf(
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
-            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", ""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
+            ProductData("", R.drawable.vegetables, "vegetables", "1", "", "$4.6", "", "", "","",""),
         )
     }
 
