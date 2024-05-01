@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.quickmart.R
@@ -247,6 +248,10 @@ class HomeFragment : Fragment(),
         startActivity(intent)
     }
 
+    override fun onAddClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(),"added to cart", Toast.LENGTH_SHORT).show()
+    }
+
     override fun onDetergentClick(product: ProductData, position: Int) {
         val intent = Intent(requireActivity(), ProductDetails::class.java)
         intent.putExtra("image", product.productImage.toString())
@@ -263,6 +268,10 @@ class HomeFragment : Fragment(),
         intent.putExtra("quantity", product.productQuantity)
         intent.putExtra("price", product.productPrice)
         startActivity(intent)
+    }
+
+    override fun onAddToCartClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(),"added", Toast.LENGTH_SHORT).show()
     }
 
 }

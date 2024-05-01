@@ -18,16 +18,16 @@ class ChilledFoodAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            chilledItemBinding.root.setOnClickListener {
-                action.onChilledClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onChilledClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
-
-    }
-
-    interface OnChilledClickListener {
-        fun onChilledClick(product: ProductData, position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChilledViewHolder {
@@ -47,5 +47,10 @@ class ChilledFoodAdapter(
 
     override fun getItemCount(): Int {
         return list.size
+    }
+
+    interface OnChilledClickListener {
+        fun onChilledClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

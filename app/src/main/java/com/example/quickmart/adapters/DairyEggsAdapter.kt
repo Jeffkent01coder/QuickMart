@@ -18,16 +18,17 @@ class DairyEggsAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            dairyeggsItemBinding.root.setOnClickListener {
-                action.onDairyClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onDairyClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
 
-    }
-
-    interface OnDairyClickListener {
-        fun onDairyClick(product: ProductData, position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DairyEggsViewHolder {
@@ -47,5 +48,10 @@ class DairyEggsAdapter(
 
     override fun getItemCount(): Int {
         return list.size
+    }
+
+    interface OnDairyClickListener {
+        fun onDairyClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

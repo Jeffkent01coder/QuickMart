@@ -2,6 +2,7 @@ package com.example.quickmart.miniscreens
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -56,5 +57,9 @@ class Vegetables : AppCompatActivity(), VegetableAdapter.OnVegetableClickListene
         intent.putExtra("quantity", product.productQuantity)
         intent.putExtra("price", product.productPrice)
         startActivity(intent)
+    }
+
+    override fun onAddToCartClick(product: ProductData, position: Int) {
+        Toast.makeText(this,"added to cart", Toast.LENGTH_SHORT).show()
     }
 }

@@ -20,11 +20,15 @@ class TopDealsAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            dealItemBinding.root.setOnClickListener {
-                action.onDealClick(product, adapterPosition)
-            }
 
+                root.setOnClickListener {
+                    action.onDealClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
+            }
         }
     }
 
@@ -49,7 +53,6 @@ class TopDealsAdapter(
 
     interface OnDealClickListener {
         fun onDealClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
-
-
 }

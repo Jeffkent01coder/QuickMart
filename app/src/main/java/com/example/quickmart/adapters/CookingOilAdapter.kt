@@ -20,12 +20,16 @@ class CookingOilAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            cookingoilItemBinding.root.setOnClickListener {
-                action.onOilClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onOilClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CookingViewHolder {
@@ -49,5 +53,6 @@ class CookingOilAdapter(
 
     interface OnCookingClickListener {
         fun onOilClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

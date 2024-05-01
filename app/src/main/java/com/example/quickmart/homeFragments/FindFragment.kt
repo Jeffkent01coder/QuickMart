@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.quickmart.databinding.FragmentFindBinding
-import com.example.quickmart.screens.QRCode
 import com.example.quickmart.subscreen.CookingIngredients
 import com.example.quickmart.subscreen.FreshFood
 import com.example.quickmart.subscreen.FruitsVegetables

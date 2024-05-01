@@ -21,13 +21,21 @@ class VegetableAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            vegetableItemBinding.root.setOnClickListener {
-                action.onVegetableClick(product, adapterPosition)
-            }
 
+                root.setOnClickListener {
+                    action.onVegetableClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
+            }
         }
+    }
 
+    interface OnVegetableClickListener {
+        fun onVegetableClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VegetableViewHolder {
@@ -47,9 +55,5 @@ class VegetableAdapter(
 
     override fun getItemCount(): Int {
         return list.size
-    }
-
-    interface OnVegetableClickListener {
-        fun onVegetableClick(product: ProductData, position: Int)
     }
 }

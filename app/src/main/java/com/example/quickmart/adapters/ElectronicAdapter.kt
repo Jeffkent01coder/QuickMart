@@ -12,22 +12,25 @@ class ElectronicAdapter(
 ) :
     RecyclerView.Adapter<ElectronicAdapter.ElectronicViewHolder>() {
 
-
     inner class ElectronicViewHolder(val electronicItemBinding: ElectronicItemBinding) :
         RecyclerView.ViewHolder(electronicItemBinding.root) {
+
         fun setData(product: ProductData, action: OnElectronicClickListener) {
             electronicItemBinding.apply {
                 productTitle.text = product.productTitle
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            electronicItemBinding.root.setOnClickListener {
-                action.onElectronicClick(product, adapterPosition)
-            }
 
+                root.setOnClickListener {
+                    action.onElectronicClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddClick(product, adapterPosition)
+                }
+            }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ElectronicViewHolder {
@@ -51,6 +54,6 @@ class ElectronicAdapter(
 
     interface OnElectronicClickListener {
         fun onElectronicClick(product: ProductData, position: Int)
+        fun onAddClick(product: ProductData, position: Int)
     }
-
 }

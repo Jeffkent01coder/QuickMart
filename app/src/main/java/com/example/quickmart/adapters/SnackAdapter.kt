@@ -14,23 +14,28 @@ class SnackAdapter(
 
     inner class SnackViewHolder(val snackItemBinding: SnackItemBinding) :
         RecyclerView.ViewHolder(snackItemBinding.root) {
+
         fun setData(product: ProductData, action: OnSnackClickListener) {
             snackItemBinding.apply {
                 productTitle.text = product.productTitle
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            snackItemBinding.root.setOnClickListener {
-                action.onSnackClick(product, adapterPosition)
-            }
 
+                root.setOnClickListener {
+                    action.onSnackClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
+            }
         }
-
     }
 
     interface OnSnackClickListener {
         fun onSnackClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SnackViewHolder {

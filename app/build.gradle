@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.example.quickmart'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.quickmart"
-        minSdk 21
-        targetSdk 33
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -50,7 +50,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //qr
-    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    implementation 'com.google.zxing:core:3.4.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+
 
     //navigation
     //    implementation "androidx.navigation:navigation-fragment-ktx:2.7.0"

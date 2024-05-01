@@ -19,9 +19,14 @@ class SpiceAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            spiceItemBinding.root.setOnClickListener {
-                action.onSpiceClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onSpiceClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
 
@@ -48,5 +53,6 @@ class SpiceAdapter(
 
     interface OnSpiceClickListener {
         fun onSpiceClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

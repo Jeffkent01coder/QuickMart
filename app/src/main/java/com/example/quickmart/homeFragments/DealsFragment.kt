@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.quickmart.R
@@ -72,6 +73,10 @@ class DealsFragment : Fragment(),
         intent.putExtra("quantity", product.productQuantity)
         intent.putExtra("price", product.productPrice)
         startActivity(intent)
+    }
+
+    override fun onAddToCartClick(product: ProductData, position: Int) {
+        Toast.makeText(requireActivity(),"added to cart", Toast.LENGTH_SHORT).show()
     }
 
     override fun onAlcoholClick(product: ProductData, position: Int) {

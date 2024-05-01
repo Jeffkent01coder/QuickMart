@@ -18,9 +18,14 @@ class FishAndSeaFoodAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            fishseaItemBinding.root.setOnClickListener {
-                action.onSeaClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onSeaClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
 
@@ -47,5 +52,6 @@ class FishAndSeaFoodAdapter(
 
     interface OnSeaClickListener {
         fun onSeaClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

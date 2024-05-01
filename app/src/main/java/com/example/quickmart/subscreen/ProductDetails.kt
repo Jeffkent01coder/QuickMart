@@ -20,7 +20,7 @@ class ProductDetails : AppCompatActivity() {
             productQuantity.text = intent.getStringExtra("quantity")
             productPrice.text = intent.getStringExtra("price")
 
-            var quantity = 0
+            var quantity = 1
             productAmount.text = quantity.toString()
 
             binding.btnAdd.setOnClickListener {

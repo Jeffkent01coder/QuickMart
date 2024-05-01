@@ -18,9 +18,14 @@ class MeatAndPoultryAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            meatandpoultryItemBinding.root.setOnClickListener {
-                action.onMeatPoultryClick(product, adapterPosition)
+
+                root.setOnClickListener {
+                    action.onMeatPoultryClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
             }
         }
 
@@ -47,5 +52,6 @@ class MeatAndPoultryAdapter(
 
     interface OnMeatPoultryClickListener {
         fun onMeatPoultryClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 }

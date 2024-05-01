@@ -21,12 +21,21 @@ class FruitAdapter(
                 product.productImage?.let { productImage.setImageResource(it) }
                 productQuantity.text = product.productQuantity
                 productPrice.text = product.productPrice
-            }
-            fruitItemBinding.root.setOnClickListener {
-                action.onFruitClick(product, adapterPosition)
-            }
 
+                root.setOnClickListener {
+                    action.onFruitClick(product, adapterPosition)
+                }
+
+                cart.setOnClickListener {
+                    action.onAddToCartClick(product, adapterPosition)
+                }
+            }
         }
+    }
+
+    interface OnFruitClickListener {
+        fun onFruitClick(product: ProductData, position: Int)
+        fun onAddToCartClick(product: ProductData, position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FruitViewHolder {
@@ -47,9 +56,4 @@ class FruitAdapter(
     override fun getItemCount(): Int {
         return list.size
     }
-
-    interface OnFruitClickListener {
-        fun onFruitClick(product: ProductData, position: Int)
-    }
-
 }

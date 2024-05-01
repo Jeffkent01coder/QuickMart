@@ -23,10 +23,10 @@ class MoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.adminLogin.setOnClickListener {
-            val intent = Intent(requireActivity(), AdminLogin::class.java)
-            startActivity(intent)
-        }
+//        binding.adminLogin.setOnClickListener {
+//            val intent = Intent(requireActivity(), AdminLogin::class.java)
+//            startActivity(intent)
+//        }
     }
 
 }
