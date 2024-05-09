@@ -30,12 +30,6 @@
                 android:iconifiedByDefault="false"
                 android:queryHint="Search Here...." />
 
-            <ImageView
-                android:id="@+id/scanner"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/scanner" />
         </LinearLayout>
 
         <ScrollView

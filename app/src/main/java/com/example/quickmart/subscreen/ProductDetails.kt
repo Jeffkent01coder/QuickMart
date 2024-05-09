@@ -29,18 +29,12 @@ class ProductDetails : AppCompatActivity() {
             }
 
             binding.btnSubtract.setOnClickListener {
-                if (quantity < 1){
-                    quantity = 0
-                }else{
+                if (quantity > 1) { // Ensure quantity is greater than 1
                     quantity -= 1
-
+                    productAmount.text = quantity.toString()
                 }
-                productAmount.text = quantity.toString()
-
             }
-
         }
-
 
         binding.ivBack.setOnClickListener {
             onBackPressed()
