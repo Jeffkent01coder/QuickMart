@@ -83,6 +83,73 @@
 
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background">
+
+            <!-- Mastercard Logo -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:src="@drawable/mastercard"
+                android:layout_gravity="end"/>
+
+            <!-- Card Holder's Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardholder's Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <!-- Card Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1234 5678 9012 3456"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:letterSpacing="0.1"/>
+
+            <!-- Expiry Date & CVV -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Expiry Date -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MM/YY"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+
+                <!-- CVV -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CVV"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -211,7 +278,7 @@
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:text="Thank you"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="130dp"
         android:textAlignment="center"
         />
 

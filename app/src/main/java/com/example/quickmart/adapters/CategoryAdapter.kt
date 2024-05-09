@@ -17,7 +17,6 @@ class CategoryAdapter(
 
         fun setData(category: ProductData, action: OnCategoryClickListener) {
             categoryItemBinding.apply {
-                category.categoryImage?.let { categoryImage.setImageResource(it) }
                 categoryTitle.text = category.mainCategory
             }
             categoryItemBinding.root.setOnClickListener {
